@@ -30,7 +30,7 @@ struct ScheduleList: View {
                     }
                 )
             }
-            .navigationTitle("Schedule")
+            .navigationTitle("スケジュール")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

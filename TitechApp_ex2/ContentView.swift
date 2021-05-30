@@ -11,11 +11,48 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("hoge")
-                Text("un")
+                VStack {
+                    HStack {
+                        Text("アナウンスメント")
+                        Spacer()
+                    }
+                    HStack {
+                        Text("フォーラム")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        Spacer()
+                    }
+                }
+                .padding()
+                VStack {
+                    HStack {
+                        Text("講義スライド")
+                        Spacer()
+                    }
+                    HStack {
+                        Text("ファイル")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        Spacer()
+                    }
+                }
+                .padding()
+                VStack {
+                    HStack {
+                        Text("zoom録画")
+                        Spacer()
+                    }
+                    HStack {
+                        Text("URL")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        Spacer()
+                    }
+                }
+                .padding()
             }
         }
-        .navigationTitle("aiueo")
+        .navigationTitle("力学1")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
